@@ -38,11 +38,11 @@ p{
 .icons{
     display: flex;
     flex-direction: column;
-    font-size: 2em;
     color:#A08CCB ;
    
 
 }
+
 .fa-solid{
     margin: 15px;
 }
@@ -57,4 +57,23 @@ a{
     list-style-type: none;
     font-weight: bold;
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .pages a {
+        display: none;
+        padding: 10px 0;
+        font-size: 1.2rem;
+    }
+    
+    .icons i {
+        display: block; /* Hide icons on mobile for simplicity */
+    }
+    
+    .nav p {
+        margin-bottom: 20px;
+    }
+    .nav{
+        width: 100px;
+    }
 }
