@@ -4,19 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menu.html" >
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="home.css">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
-    <div id="menu-placeholder"></div>
-    <p>this is the home page</p>
-    <script>
-        // Load the menu.html content into the #menu-placeholder div
-        fetch('menu.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu-placeholder').innerHTML = data;
-            });
-    </script>
+ 
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">My Logo</div>
+            <div class="nav-links" id="navLinks">
+                <a href="home.html"><i class="fa-solid fa-home"></i> <span>Home</span></a>
+                <a href="about.html"><i class="fa-solid fa-globe"></i> <span>About</span></a>
+                <a href="portfolio.html"><i class="fa-solid fa-briefcase"></i> <span>Portfolio</span></a>
+                <a href="contact.html"><i class="fa-solid fa-phone"></i> <span>Contact</span></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    
+    
     <script src="menu.js"></script>
+
+    <h1 style="font-size: 70px; 
+    margin-top: 200px;">Welcome to My Website</h1>
+        <p style="font-size: 50px;">This is a simple, responsive landing page.</p>
+        <button style="  margin-top: 50px;
+        padding: 10px 20px;
+        background-color: #ffeb3b;
+        color: #333;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;">see more</button> 
+        
 </body>
 </html>

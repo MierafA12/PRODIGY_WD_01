@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menu.html" >
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Document</title>
 </head>
-<body>
-    <div id="menu-placeholder"></div>
-    <p>this is the portfolio page</p>
-    <script>
-        // Load the menu.html content into the #menu-placeholder div
-        fetch('menu.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu-placeholder').innerHTML = data;
-            });
-    </script>
+<body> 
+
+ 
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">My Logo</div>
+            <div class="nav-links" id="navLinks">
+                <a href="home.html"><i class="fa-solid fa-home"></i> <span>Home</span></a>
+                <a href="about.html"><i class="fa-solid fa-globe"></i> <span>About</span></a>
+                <a href="portfolio.html"><i class="fa-solid fa-briefcase"></i> <span>Portfolio</span></a>
+                <a href="contact.html"><i class="fa-solid fa-phone"></i> <span>Contact</span></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    
+    
     <script src="menu.js"></script>
+</body>
+    <div id="menu-placeholder"></div>
+    <p style="margin-top: 300px; text-align: center; font-size: 40px;">
+        this is the portfolio page</p>
 </body>
 </html>
